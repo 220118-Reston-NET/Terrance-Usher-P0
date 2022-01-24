@@ -4,7 +4,7 @@ namespace ProjectZeroUI
     {
         
         /// <summary>
-        /// This will display the menus for ProjectZero
+        /// This will display the menus for ProjectZero.
         /// </summary>
         void Display();
 
