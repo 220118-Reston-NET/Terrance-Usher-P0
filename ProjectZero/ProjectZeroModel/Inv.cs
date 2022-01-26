@@ -22,12 +22,7 @@ namespace ProjectZeroModel
                 }
             }
         }
-        private List<int> _invList;
-        public List<int> InvList
-        {
-            get { return _invList; }
-            set { _invList = value; }
-        }
+        public List<int>? InvList { get; set;}
         
     }
 

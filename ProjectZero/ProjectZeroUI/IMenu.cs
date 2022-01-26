@@ -11,7 +11,7 @@ namespace ProjectZeroUI
         /// <summary>
         /// This will take in what choice the user picks in the menu
         /// </summary>
-        /// <returns> string </returns>
+        /// <returns> Menu that will change the screen </returns>
         string UserChoice();
 
     }

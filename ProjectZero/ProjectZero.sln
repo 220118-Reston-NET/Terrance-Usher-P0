@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectZeroUI", "ProjectZer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectZeroModel", "ProjectZeroModel\ProjectZeroModel.csproj", "{1B83C4CD-022A-4DC2-92C0-CB1CEE2208B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectZeroBL", "ProjectZeroBL\ProjectZeroBL.csproj", "{FBCC4C48-16DB-4D06-B451-4332B3F9BDD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectZeroDL", "ProjectZeroDL\ProjectZeroDL.csproj", "{76798E17-0A9D-4B2B-B7D4-98F0558AFF0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{1B83C4CD-022A-4DC2-92C0-CB1CEE2208B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B83C4CD-022A-4DC2-92C0-CB1CEE2208B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B83C4CD-022A-4DC2-92C0-CB1CEE2208B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBCC4C48-16DB-4D06-B451-4332B3F9BDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCC4C48-16DB-4D06-B451-4332B3F9BDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCC4C48-16DB-4D06-B451-4332B3F9BDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCC4C48-16DB-4D06-B451-4332B3F9BDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76798E17-0A9D-4B2B-B7D4-98F0558AFF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76798E17-0A9D-4B2B-B7D4-98F0558AFF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76798E17-0A9D-4B2B-B7D4-98F0558AFF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76798E17-0A9D-4B2B-B7D4-98F0558AFF0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
