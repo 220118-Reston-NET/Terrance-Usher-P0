@@ -30,15 +30,15 @@ namespace ProjectZeroUI
                 case "1":
                     return "AddCustomer";
                 case "2":
-                    return "AddCustomer";
+                    return "SearchCustomer";
                 case "3":
-                    return "AddCustomer";
+                    return "ViewStoreInventory";
                 case "4":
-                    return "AddCustomer";
+                    return "PlaceOrder";
                 case "5":
-                    return "AddCustomer";
+                    return "ViewOrderHistory";
                 case "6":
-                    return "AddCustomer";
+                    return "ReplenishInventory";
                 default:
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press Enter to continue");

@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ProjectZeroUI;
+using ProjectZeroDL;
+using ProjectZeroBL;
 
 
 bool repeat = true;
@@ -14,6 +16,9 @@ while (repeat)
 
     switch (ans)
     {
+        case "AddCustomer":
+            menu = new AddCustMenu(new CustomerBL(new Repository()));
+            break;
         case "MainMenu":
             menu = new MainMenu();
             break;
@@ -22,6 +27,8 @@ while (repeat)
             break;
         default:
             Console.WriteLine("Page Does Not Exist");
+            Console.WriteLine("Please press Enter to continue");
+            Console.ReadLine();
             break;
     }
 

@@ -10,6 +10,14 @@ namespace ProjectZeroModel
         public string? CustAddress {get; set;}
         public int CustNum { get; set; }
         public List<Item> CustOrders { get; set; }
+
+
+        public Cust()
+        {
+            CustName = " ";
+            CustAddress = " ";
+            CustNum = 0000000000;
+        }
     }
 
 }
