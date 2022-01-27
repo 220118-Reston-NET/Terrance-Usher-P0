@@ -8,7 +8,7 @@ namespace ProjectZeroModel
     {
         public string? CustName { get; set;}
         public string? CustAddress {get; set;}
-        public int CustNum { get; set; }
+        public string? CustNum { get; set; }
         public List<Item> CustOrders { get; set; }
 
 
@@ -16,7 +16,13 @@ namespace ProjectZeroModel
         {
             CustName = " ";
             CustAddress = " ";
-            CustNum = 0000000000;
+            CustNum = "0000000000";
+        }
+
+        public override string ToString()
+        {
+            return $"Name: {CustName}\nPhone Number: {CustNum}" +
+              $"\nAddress: {CustAddress}\nOrders: {CustOrders}";
         }
     }
 

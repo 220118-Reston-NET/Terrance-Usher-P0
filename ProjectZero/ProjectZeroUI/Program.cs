@@ -16,6 +16,9 @@ while (repeat)
 
     switch (ans)
     {
+        case "SearchCustomer":
+            menu = new SearchCustMenu(new CustomerBL(new Repository()));
+            break;
         case "AddCustomer":
             menu = new AddCustMenu(new CustomerBL(new Repository()));
             break;

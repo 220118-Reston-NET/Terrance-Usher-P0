@@ -41,7 +41,7 @@ namespace ProjectZeroUI
                     Console.WriteLine("Please Enter a Phone Number");
                     try
                     {
-                        _newCust.CustNum = Convert.ToInt32(Console.ReadLine());
+                        _newCust.CustNum = Console.ReadLine();
                     }
                     catch (System.Exception exc)
                     {

@@ -25,9 +25,24 @@ namespace ProjectZeroBL
             return _repo.AddCust(c_cust);
         }
 
-        public List<Cust> SearchCustomer(string c_name)
+        public List<Cust> SearchCustomer(string c_cate, string c_name)
         {
-            throw new NotImplementedException();
+            List<Cust> listofCustomer = _repo.GetAllCust();
+
+            switch (c_cate)
+            {
+                case "Name":
+                    return listofCustomer.Where(cust => cust.CustName.Contains(c_name)).ToList();
+                case "Address":
+                    return listofCustomer.Where(cust => cust.CustAddress.Contains(c_name)).ToList();
+                case "PhoneNumber":
+                    return listofCustomer.Where(cust => cust.CustNum.Contains(c_name)).ToList();
+                default:
+                    Console.WriteLine("You can't spell.");
+                    Console.ReadLine();
+                    return listofCustomer;
+            }
+
         }
     }
 

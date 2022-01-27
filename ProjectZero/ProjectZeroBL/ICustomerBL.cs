@@ -20,6 +20,6 @@ namespace ProjectZeroBL
         /// </summary>
         /// <param name="c_name"></param>
         /// <returns></returns>
-        List<Cust> SearchCustomer(string c_name);
+        List<Cust> SearchCustomer(string c_cate,string c_name);
     }
 }
