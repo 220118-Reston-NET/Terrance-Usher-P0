@@ -2,6 +2,14 @@
 using ProjectZeroUI;
 using ProjectZeroDL;
 using ProjectZeroBL;
+using Microsoft.Extensions.Configuration;
+
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+string _connectionString = configuration.GetConnectionString("FirstConnectString");
 
 
 bool repeat = true;
@@ -16,11 +24,14 @@ while (repeat)
 
     switch (ans)
     {
+        case "ViewStoreInventory":
+            menu = new ViewStoreInvMenu(new CustomerBL(new SQLRepository(_connectionString)));
+            break;
         case "SearchCustomer":
-            menu = new SearchCustMenu(new CustomerBL(new Repository()));
+            menu = new SearchCustMenu(new CustomerBL(new SQLRepository(_connectionString)));
             break;
         case "AddCustomer":
-            menu = new AddCustMenu(new CustomerBL(new Repository()));
+            menu = new AddCustMenu(new CustomerBL(new SQLRepository(_connectionString)));
             break;
         case "MainMenu":
             menu = new MainMenu();

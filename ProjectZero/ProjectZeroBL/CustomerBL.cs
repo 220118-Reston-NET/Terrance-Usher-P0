@@ -25,6 +25,21 @@ namespace ProjectZeroBL
             return _repo.AddCust(c_cust);
         }
 
+        public List<Store> GetAllStores()
+        {
+            return _repo.GetAllStores();
+        }
+
+        public int GetLastCust()
+        {
+            return _repo.GetLastCust();
+        }
+
+        public List<Inv> GetStoreInv(int StoreID)
+        {
+            return _repo.GetStoreInv(StoreID);
+        }
+
         public List<Cust> SearchCustomer(string c_cate, string c_name)
         {
             List<Cust> listofCustomer = _repo.GetAllCust();

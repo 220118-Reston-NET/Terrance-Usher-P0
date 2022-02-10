@@ -20,6 +20,7 @@ namespace ProjectZeroUI
         public string UserChoice()
         {
             string userInput = Console.ReadLine();
+            Console.Clear();
 
             switch (userInput)
             {

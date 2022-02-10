@@ -4,7 +4,7 @@
 
 namespace ProjectZeroModel
 {
-    public class Inv : Item
+    public class Inv : Item //Store_Item
     {
         private int _itemQuantity;
         public int ItemQuantity
@@ -22,8 +22,14 @@ namespace ProjectZeroModel
                 }
             }
         }
-        public List<int>? InvList { get; set;}
+        public List<Item>? InvList { get; set;}
         
+
+        public override string ToString()
+        {
+            return $"{ItemName}\nID: {ItemID}\n${ItemPrice}       qty:{ItemQuantity}" +
+              $"\nDescription:\n{ItemDesc}\n#{ItemCate}";
+        }
     }
 
 }

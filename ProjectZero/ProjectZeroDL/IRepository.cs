@@ -15,10 +15,26 @@ namespace ProjectZeroDL
         Cust AddCust(Cust c_cust);
 
         /// <summary>
+        /// Grabs the last customer by searching for the largest id number
+        /// </summary>
+        /// <returns></returns>
+        int GetLastCust();
+
+        /// <summary>
         /// Will give a list of all customers in the database
         /// </summary>
         /// <returns> A list collection of Cust objects </returns>
         List<Cust> GetAllCust();
+
+
+        /// <summary>
+        /// Will give a list of all currently available stores in the database
+        /// </summary>
+        /// <returns></returns>
+        List<Store> GetAllStores();
+
+
+        List<Inv> GetStoreInv(int StoreID);
     }
 }
 

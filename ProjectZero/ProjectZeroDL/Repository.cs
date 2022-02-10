@@ -31,6 +31,21 @@ namespace ProjectZeroDL
             return JsonSerializer.Deserialize<List<Cust>>(_jsonString);
 
         }
+
+        public List<Store> GetAllStores()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetLastCust()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Inv> GetStoreInv(int StoreID)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

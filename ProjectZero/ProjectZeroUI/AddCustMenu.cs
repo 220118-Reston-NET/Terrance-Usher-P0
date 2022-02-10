@@ -31,7 +31,11 @@ namespace ProjectZeroUI
                 case "0":
                     return "MainMenu";
                 case "1":
+                    Console.Clear();
                     _custBL.AddCust(_newCust);
+                    Console.WriteLine("Your Customer ID is: " + _custBL.GetLastCust());
+                    Console.WriteLine("\nPress Enter to leave this menu.");
+                    Console.ReadLine();
                     return "MainMenu";
                 case "2":
                     Console.WriteLine("Please enter a Name");

@@ -16,10 +16,23 @@ namespace ProjectZeroBL
         Cust AddCust(Cust c_cust);
 
         /// <summary>
+        /// Grabs the largest customer id a.k.a the last customer added
+        /// </summary>
+        /// <returns></returns>
+        int GetLastCust();
+
+        /// <summary>
         /// Will give a list of cust objects that are related to the searched name
         /// </summary>
         /// <param name="c_name"></param>
         /// <returns></returns>
         List<Cust> SearchCustomer(string c_cate,string c_name);
+
+
+        List<Store> GetAllStores();
+
+        List<Inv> GetStoreInv (int StoreID);
+
+
     }
 }
