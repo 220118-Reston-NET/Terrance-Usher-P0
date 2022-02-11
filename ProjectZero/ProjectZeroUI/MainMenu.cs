@@ -34,7 +34,7 @@ namespace ProjectZeroUI
                 case "3":
                     return "ViewStoreInventory";
                 case "4":
-                    return "PlaceOrder";
+                    return "PlaceOrder_1";
                 case "5":
                     return "ViewOrderHistory";
                 case "6":

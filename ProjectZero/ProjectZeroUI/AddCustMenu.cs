@@ -19,7 +19,7 @@ namespace ProjectZeroUI
             Console.WriteLine("[3] Phone Number - " + _newCust.CustNum);
             Console.WriteLine("[2] Name - " + _newCust.CustName);
             Console.WriteLine("[1] Save");
-            Console.WriteLine("[0] Go Back");
+            Console.WriteLine("[0] Go Back to Main Menu");
         }
 
         public string UserChoice()

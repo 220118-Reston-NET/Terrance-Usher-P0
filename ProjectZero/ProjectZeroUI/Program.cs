@@ -24,6 +24,9 @@ while (repeat)
 
     switch (ans)
     {
+        case "PlaceOrder_1":
+            menu = new PlaceOrderMenu_1();
+            break;
         case "ViewStoreInventory":
             menu = new ViewStoreInvMenu(new CustomerBL(new SQLRepository(_connectionString)));
             break;

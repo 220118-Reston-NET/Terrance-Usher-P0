@@ -19,7 +19,7 @@ namespace ProjectZeroUI
                 Console.WriteLine("[" + listOfStores[i].StoreID + "] " + listOfStores[i].StoreName);
             }
 
-            Console.WriteLine("[0] Go Back");
+            Console.WriteLine("[0] Go Back to Main Menu");
         }
 
         public string UserChoice()
