@@ -26,6 +26,13 @@ namespace ProjectZeroDL
         /// <returns> A list collection of Cust objects </returns>
         List<Cust> GetAllCust();
 
+        /// <summary>
+        /// Grab a customer by their ID
+        /// </summary>
+        /// <param name="CustID"></param>
+        /// <returns></returns>
+        Cust GetCustByID(int CustID);
+
 
         /// <summary>
         /// Will give a list of all currently available stores in the database
@@ -35,6 +42,19 @@ namespace ProjectZeroDL
 
 
         List<Inv> GetStoreInv(int StoreID);
+
+
+        Orders CreateOrder(int CustID, int StoreID);
+
+
+        void AddToOrder(Orders CurrentOrder, Inv StoreItem);
+
+
+        void ChangeInvQuantity(int value,int StoreItemID);
+
+        List<Orders> GetAllOrders(int ID, string filter);
+
+        List<Inv> GetAllOrderItems(int ID);
     }
 }
 

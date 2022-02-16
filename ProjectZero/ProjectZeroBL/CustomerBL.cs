@@ -25,6 +25,26 @@ namespace ProjectZeroBL
             return _repo.AddCust(c_cust);
         }
 
+        public void AddToOrder(Orders CurrentOrder, Inv StoreItem)
+        {
+            _repo.AddToOrder(CurrentOrder,StoreItem);
+        }
+
+        public void ChangeInvQuantity(int value, int StoreItemID)
+        {
+            _repo.ChangeInvQuantity(value, StoreItemID);
+        }
+
+        public Orders CreateOrder(int CustID, int StoreID)
+        {
+            return _repo.CreateOrder(CustID,StoreID);
+        }
+
+        public List<Orders> GetAllOrders()
+        {
+            return _repo.GetAllOrders(0, " ");
+        }
+
         public List<Store> GetAllStores()
         {
             return _repo.GetAllStores();
@@ -57,6 +77,12 @@ namespace ProjectZeroBL
                     Console.ReadLine();
                     return listofCustomer;
             }
+
+        }
+
+        public Cust SearchCustomer(int c_cID)
+        {
+            return _repo.GetCustByID(c_cID);
 
         }
     }

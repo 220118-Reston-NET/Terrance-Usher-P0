@@ -24,6 +24,26 @@ namespace ProjectZeroDL
             return c_cust;
         }
 
+        public List<Inv> AddToOrder(Orders CurrentOrder, int StoreItemID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddToOrder(Orders CurrentOrder, Inv StoreItem)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ChangeInvQuantity(int value, int StoreItemID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Orders CreateOrder(int CustID, int StoreID)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Cust> GetAllCust()
         {
             _jsonString = File.ReadAllText(_filepath + "Customers.json"); 
@@ -32,7 +52,22 @@ namespace ProjectZeroDL
 
         }
 
+        public List<Inv> GetAllOrderItems(int ID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Orders> GetAllOrders(int ID, string filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Store> GetAllStores()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Cust GetCustByID(int CustID)
         {
             throw new NotImplementedException();
         }

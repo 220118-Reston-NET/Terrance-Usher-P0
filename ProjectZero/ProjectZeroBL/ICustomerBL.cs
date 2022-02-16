@@ -28,10 +28,20 @@ namespace ProjectZeroBL
         /// <returns></returns>
         List<Cust> SearchCustomer(string c_cate,string c_name);
 
+        Cust SearchCustomer(int c_cID);
+
 
         List<Store> GetAllStores();
 
         List<Inv> GetStoreInv (int StoreID);
+
+        Orders CreateOrder(int CustID, int StoreID);
+
+        void AddToOrder(Orders CurrentOrder, Inv StoreItem);
+
+        void ChangeInvQuantity(int value,int StoreItemID);
+
+        List<Orders> GetAllOrders();
 
 
     }

@@ -3,16 +3,17 @@ using ProjectZeroModel;
 
 namespace ProjectZeroUI
 {
-    public class ViewStoreInvMenu : IMenu
+    public class ReplenishInvMenu : IMenu
     {
         private ICustomerBL _custBL;
-        public ViewStoreInvMenu(ICustomerBL c_custBL) { _custBL = c_custBL;}
+        public ReplenishInvMenu(ICustomerBL c_custBL) { _custBL = c_custBL;}
+
         public void Display()
         {
             List<Store>listOfStores = new List<Store>();
             listOfStores = _custBL.GetAllStores();
 
-            Console.WriteLine("Please Select a Store to View.");
+            Console.WriteLine("Please Select a Store to Replenish.");
 
             for (int i = listOfStores.Count - 1; i >= 0; i--)
             {
@@ -37,7 +38,6 @@ namespace ProjectZeroUI
             else if (userInput > 0 && userInput <= listOfStores.Count)
             {
                 Console.WriteLine("Store: " + listOfStores[userInput - 1].StoreName);
-                Console.WriteLine("Located: "+ listOfStores[userInput - 1].StoreAddress);
                 List<Inv>listOfInv = new List<Inv>();
                 listOfInv = _custBL.GetStoreInv(userInput);
                 foreach (Inv StoreItem in listOfInv)
@@ -46,10 +46,21 @@ namespace ProjectZeroUI
                     Console.WriteLine(StoreItem);
                     Console.WriteLine("=========================");
                 }
-                Console.WriteLine("\nPress Enter to Exit Menu");
-                Console.ReadLine();
+                Console.WriteLine("\nPlease enter the item ID of what Item you wish to replenish.");
+                int selectedItemID = Convert.ToInt32(Console.ReadLine());
+                
+                for (int i = 0; i < listOfInv.Count(); i++)
+                {
+                    if (listOfInv[i].ItemID == selectedItemID)
+                    {
+                        Console.WriteLine("How many " + listOfInv[i].ItemName + " would you like to add?");
+                        int userAmount = Convert.ToInt32(Console.ReadLine());
+                        _custBL.ChangeInvQuantity(Math.Abs(userAmount),listOfInv[i].ItemID);
+                    }
+                }
 
-                return "MainMenu";
+
+                return "ReplenishInventory";
 
             }
             else
@@ -57,7 +68,7 @@ namespace ProjectZeroUI
                 Console.WriteLine("Please Input a valid response");
                 Console.WriteLine("Please press Enter to continue");
                 Console.ReadLine();
-                return "ViewStoreInventory";
+                return "ReplenishInventory";
             }
         }
     }
