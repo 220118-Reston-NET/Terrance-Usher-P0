@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectZeroBL", "ProjectZer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectZeroDL", "ProjectZeroDL\ProjectZeroDL.csproj", "{76798E17-0A9D-4B2B-B7D4-98F0558AFF0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectZeroTest", "ProjectZeroTest\ProjectZeroTest.csproj", "{DD6D52E2-B519-4BB1-83FD-401C7D7836D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{76798E17-0A9D-4B2B-B7D4-98F0558AFF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76798E17-0A9D-4B2B-B7D4-98F0558AFF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76798E17-0A9D-4B2B-B7D4-98F0558AFF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD6D52E2-B519-4BB1-83FD-401C7D7836D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD6D52E2-B519-4BB1-83FD-401C7D7836D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD6D52E2-B519-4BB1-83FD-401C7D7836D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD6D52E2-B519-4BB1-83FD-401C7D7836D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
